@@ -1,0 +1,27 @@
+.card-berita{
+    display: flex; 
+    position:relative;
+}
+
+.img-card-berita{
+    width: 30%;
+    object-fit: cover;
+    height: 200px;
+    border-radius: 10px;
+    flex-shrink: 0;
+    max-width: 100%;
+    margin-right: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.judul-berita{
+    text-decoration: none;
+     color :#212529;
+     font-size: 18px;
+}
+
+.waktu-berita{
+    font-size: 12px;
+    font-family: poppins 14px;
+    font-weight: 50; 
+}
