@@ -1,0 +1,108 @@
+$(document).ready(function () {
+  //NEWS SLIDESHOW
+  $(".big-news-carousel").owlCarousel({
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    margin: 10,
+    nav: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 1,
+      },
+      1000: {
+        items: 1,
+      },
+    },
+  });
+
+  //BANNER SLIDESHOW
+  $(".slideshow-banner").owlCarousel({
+    loop: true,
+    center: true,
+    margin: 10,
+    nav: true,
+    responsive: {
+      0: {
+        items: 2,
+      },
+      600: {
+        items: 2,
+      },
+      1000: {
+        items: 2,
+      },
+    },
+  });
+
+  //MOST POPULAR SLIDE SHOW
+  $(".popular-carousel").owlCarousel({
+    loop: true,
+    margin: 20,
+    nav: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 4,
+      },
+      1000: {
+        items: 4,
+      },
+    },
+  });
+
+  //PROGRAM POPUP SLIDE SHOW
+  $(".program-card").owlCarousel({
+    loop: true,
+    margin: 20,
+    nav: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 4,
+      },
+      1000: {
+        items: 4,
+      },
+    },
+  });
+  //CORPORATE SECTION SLIDE SHOW
+
+  $(".corporate-slideshow").owlCarousel({
+    loop: true,
+    margin: 20,
+    nav: false,
+    responsive: {
+      0: {
+        items: 2,
+      },
+      600: {
+        items: 4.5,
+      },
+      1000: {
+        items: 4.5,
+      },
+    },
+  });
+
+
+  $(".follow").click(function () {
+    if ($(this).hasClass("follow")) {
+      $(this).addClass("followed");
+      $(this).removeClass("follow");
+      $(this).text("UNFOLLOW");
+    } else {
+      $(this).removeClass("followed");
+      $(this).addClass("follow");
+      $(this).text("FOLLOW");
+    }
+  })
+});
